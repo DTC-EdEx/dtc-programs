@@ -45,8 +45,12 @@ in a typical week, and what happens outside Canvas]
 
 ## Colors
 
-Set at the top of `program.css`. Primary: [PLACEHOLDER, e.g. #1f5f8b]. Contrast checked:
-[ ] yes, date ________
+Program colors live in the main SALT repository, not here:
+`DTC-EdEx/DTC-Main-SALT` → `tools/program-colors.json` (seven colors per
+program, with automatic contrast checks). Pages use them through a class on
+the page wrapper.
+
+- **SALT program class:** [salt-program-...]
 
 ## Pilot activities
 

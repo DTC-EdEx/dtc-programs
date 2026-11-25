@@ -9,7 +9,7 @@ working on before making any change there.
 
 - `programs/<program>/` — one folder per program (one Canvas sub-account each).
   - `CLAUDE.md` — how this program uses Canvas. **Always read it first.**
-  - `program.css` — this program's colors, plus styles for its pilot activities.
+  - `program.css` — styles for this program's pilot activities (no colors).
   - `program.js` — JavaScript for this program's pilot activities.
   - `canvas-upload/` — the two small loader files uploaded once into the
     sub-account's Canvas theme. Do not change them.
@@ -17,7 +17,9 @@ working on before making any change there.
 - `programs/udc-programs/` — the UDC (Utah Department of Corrections)
   sub-account, with its 13 sub-accounts as folders inside it. Canvas loads the
   UDC folder's files in all of them.
-- `templates/` — the approved starting point for home and orientation pages.
+- `templates/` — the orientation page template and the program `CLAUDE.md`
+  template. **Course home pages** start from `examples/home-page-plumbing.html`
+  in `DTC-Main-SALT`.
 - `docs/` — how-to guides for people (Canvas setup, pilot activities, Beta).
 
 The shared SALT code (`salt.css`, `salt.js`) lives in a different repository,
@@ -55,7 +57,9 @@ program before it becomes part of SALT. Follow
 
 1. **Use only SALT components** from the component showcase
    (`examples/salt-component-showcase.html` in `DTC-EdEx/DTC-Main-SALT`). Copy
-   their markup exactly; the class names are what make them work.
+   their markup exactly; the class names are what make them work. Follow the
+   "Authoring rules" in that repository's README (for example, Canvas removes
+   `<button>` and `<input>`, so components use `<div>` and `<span>`).
 2. **No `<script>` or `<style>` tags.** Canvas removes them. Avoid inline
    `style=""` unless the showcase uses it.
 3. **Headings start at `<h2>`.** Canvas uses `<h1>` for the page title. Never
@@ -66,7 +70,7 @@ program before it becomes part of SALT. Follow
    Links that leave Canvas open in a new tab with `target="_blank" rel="noopener"`.
 6. **Color is never the only way to show meaning.** Text and its background
    must have at least 4.5:1 contrast (3:1 for large text and icons). Check
-   this whenever a program's colors in `program.css` change.
+   SALT's `tools/build-program-colors.js` checks program colors automatically.
 7. **Plain language.** Many students read on a phone in a shop, lab, or
    clinical setting. Short sentences, common words, and the most important
    thing first.
@@ -81,8 +85,12 @@ program before it becomes part of SALT. Follow
 
 1. Ask which program, if the designer hasn't said.
 2. Read `programs/<program>/CLAUDE.md`. For a UDC program, also read
-   `programs/udc-programs/CLAUDE.md`.
-3. Start new pages from `templates/`, then fit them to how the program
+   `programs/udc-programs/CLAUDE.md`. Look at the current `DTC-Main-SALT`
+   README and showcase too: SALT changes often.
+3. Start home pages from `examples/home-page-plumbing.html` in
+   `DTC-Main-SALT` and orientation pages from `templates/`. Put the program's
+   `salt-program-` class (listed in its `CLAUDE.md`) on the page wrapper. Then
+   fit the page to how the program
    actually uses Canvas. A program that only uses Canvas for quizzes needs a
    very different home page than a fully online one.
 4. **Remember what you learn.** When the designer tells you something lasting

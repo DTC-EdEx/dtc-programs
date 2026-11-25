@@ -67,8 +67,9 @@ on top. Claude does both steps when you ask.
          and work normally
 3. Claude opens the same change as a pull request into `DTC-Main-SALT`, noting
    "tested in Beta." Trae or Wes merges.
-4. Bump the version (`?v=4.2` → `?v=4.3`) in the production Canvas theme files
-   so browsers fetch the new code right away.
+4. The change reaches production Canvas within about 10 minutes. Bumping the
+   version (`?v=4.2` → `?v=4.3`) in the Canvas theme files is only needed if
+   it has to show up sooner (see the `DTC-Main-SALT` README).
 
 ## When Instructure refreshes Beta
 

@@ -1,6 +1,6 @@
 # DTC EdEx — Program Pages
 
-Home pages, orientation pages, and theme colors for every Davis Tech program,
+Home pages, orientation pages, and pilot activities for every Davis Tech program,
 built on the shared [SALT framework](https://github.com/DTC-EdEx/DTC-Main-SALT).
 
 Think of it like a team playbook: **SALT** is the core offense everyone runs,
@@ -16,7 +16,9 @@ Canvas root account theme ──► SALT (DTC-Main-SALT)                 all com
 ```
 
 Canvas loads the root account's theme files in every sub-account too, so each
-sub-account adds only its own colors and pilot activities. Nothing in one
+sub-account adds only its own pilot activities. Program colors live in SALT
+(`tools/program-colors.json`) and are chosen on each page with a
+`salt-program-` class. Nothing in one
 program's files reaches another program. Guides:
 
 - [Setting up a sub-account](docs/canvas-sub-account-setup.md)
@@ -27,11 +29,11 @@ program's files reaches another program. Guides:
 
 ```
 CLAUDE.md                     team rules Claude reads every session
-templates/                    starting point for home and orientation pages
+templates/                    orientation page template, program CLAUDE.md template
 docs/                         how-to guides
 programs/<program>/
     CLAUDE.md                 how this program uses Canvas (fill this in!)
-    program.css               colors + pilot activity styles
+    program.css               pilot activity styles
     program.js                pilot activity code
     canvas-upload/            two loader files, uploaded once to the sub-account theme
     home-page/                home page HTML

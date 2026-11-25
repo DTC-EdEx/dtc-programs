@@ -14,7 +14,6 @@
 /.github/                        @DurtschiDTCLSA @WES-GITHUB-USERNAME
 
 # Shared templates: role leads keep these consistent across programs
-/templates/home-page.html        @HEATHER-GITHUB-USERNAME @DurtschiDTCLSA
 /templates/orientation-page.html @KEITH-GITHUB-USERNAME @DurtschiDTCLSA
 
 # Programs: the program's designer (plus a backup) is asked to look at

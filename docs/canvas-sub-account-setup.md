@@ -1,7 +1,8 @@
 # Setting up a program's Canvas sub-account
 
 Each sub-account gets **two small files**, uploaded **once**. They point Canvas
-at that program's `program.css` and `program.js` on GitHub. After that,
+at that program's `program.css` and `program.js` on GitHub, where its pilot
+activities live. After that,
 changes happen in GitHub, and Canvas picks them up within about 10 minutes.
 
 ## What goes where
@@ -56,9 +57,16 @@ each sub-account's own files after them.
 **The UDC sub-account and its 13 sub-accounts each get their own upload.**
 The UDC parent uses the files in `programs/udc-programs/canvas-upload/`.
 
-## Changing colors
+## Colors are not set here
 
-Edit the top section of `programs/<program>/program.css` through a pull
-request. Check that the primary color has at least 4.5:1 contrast against
-white, and record it in the program's `CLAUDE.md`. Nothing needs to be
-re-uploaded in Canvas.
+Program colors live in `DTC-Main-SALT` (`tools/program-colors.json`) and are
+chosen on each page with its `salt-program-` class, for example
+`<div class="salt-home salt-program-hvac">`. Nothing needs to be uploaded in
+Canvas for colors. To add or change a program's colors, ask Trae or Wes (see
+the "Program colors" section of the `DTC-Main-SALT` README).
+
+## Do I need to upload before a program has any pilot activities?
+
+No, but it's easiest to do all 44 once now. The files are tiny and do nothing
+until a program adds something. Then designers never have to wait for an
+admin before trying an idea.
