@@ -1,0 +1,20 @@
+/* =========================================================
+   Firefighter / EMT / Advanced EMT — program styles
+   Loads on every Canvas page in this sub-account (and any sub-accounts
+   under it), in browsers and the Canvas app, AFTER the main SALT theme.
+   See docs/program-activities.md before adding anything here.
+   ========================================================= */
+
+/* ---------- 1. Program colors ----------
+   Defaults match SALT, so nothing changes until you pick new colors.
+   Check contrast: at least 4.5:1 against white. */
+:root {
+    --salt-primary: #b32839;        /* banners, buttons, highlights */
+    --salt-primary-dark: #8f1f2d;   /* hover and pressed states */
+    --salt-primary-light: #f8edef;  /* soft backgrounds */
+    --dt-color-primary: #b32839;    /* DesignPlus primary (usually the same) */
+}
+
+/* ---------- 2. Pilot activity styles ----------
+   Every selector must start with .salt-pilot- so nothing else in Canvas
+   changes. Never restyle Canvas's own menus, buttons, or pages. */

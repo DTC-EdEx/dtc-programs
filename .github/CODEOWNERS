@@ -1,0 +1,53 @@
+# CODEOWNERS — who is ASKED TO REVIEW changes to each folder.
+# This team uses it to NOTIFY, not to block: anyone on the team can merge
+# ("Require review from Code Owners" stays OFF for this repository).
+# GitHub uses the LAST line that matches a file.
+#
+# TODO: replace each @NAME-GITHUB-USERNAME with the person's real
+# GitHub username once their account exists.
+
+# Default: anything not listed below
+*    @DurtschiDTCLSA @WES-GITHUB-USERNAME
+
+# Team-wide rules and pull request checklist (accessibility lead reviews)
+/CLAUDE.md                       @JODIE-GITHUB-USERNAME @DurtschiDTCLSA
+/.github/                        @DurtschiDTCLSA @WES-GITHUB-USERNAME
+
+# Shared templates: role leads keep these consistent across programs
+/templates/home-page.html        @HEATHER-GITHUB-USERNAME @DurtschiDTCLSA
+/templates/orientation-page.html @KEITH-GITHUB-USERNAME @DurtschiDTCLSA
+
+# Programs: the program's designer (plus a backup) is asked to look at
+# every change, including home page and orientation changes made by others.
+# The UDC line also covers every UDC sub-account folder inside it.
+/programs/nurse-assistant-home-health-aide/       @HEATHER-GITHUB-USERNAME @DurtschiDTCLSA
+/programs/dental-assisting/                       @HEATHER-GITHUB-USERNAME @DurtschiDTCLSA
+/programs/drafting-and-design/                    @HEATHER-GITHUB-USERNAME @DurtschiDTCLSA
+/programs/surgical-technology/                    @HEATHER-GITHUB-USERNAME @DurtschiDTCLSA
+/programs/phlebotomy/                             @HEATHER-GITHUB-USERNAME @DurtschiDTCLSA
+/programs/business/                               @HEATHER-GITHUB-USERNAME @DurtschiDTCLSA
+/programs/manufacturing-technology/               @IXCHEL-GITHUB-USERNAME @DurtschiDTCLSA
+/programs/firefighter-emt-advanced-emt/           @IXCHEL-GITHUB-USERNAME @DurtschiDTCLSA
+/programs/udc-programs/                           @IXCHEL-GITHUB-USERNAME @DurtschiDTCLSA
+/programs/pharmacy-technician/                    @JODIE-GITHUB-USERNAME @DurtschiDTCLSA
+/programs/machining-technology/                   @JODIE-GITHUB-USERNAME @DurtschiDTCLSA
+/programs/cosmetology/                            @JODIE-GITHUB-USERNAME @DurtschiDTCLSA
+/programs/nail-technician/                        @JODIE-GITHUB-USERNAME @DurtschiDTCLSA
+/programs/culinary-arts/                          @JODIE-GITHUB-USERNAME @DurtschiDTCLSA
+/programs/esthetician-brow-and-lash/              @JODIE-GITHUB-USERNAME @DurtschiDTCLSA
+/programs/it-networking-and-cybersecurity/        @KEITH-GITHUB-USERNAME @DurtschiDTCLSA
+/programs/automation-control-systems-robotics/    @KEITH-GITHUB-USERNAME @DurtschiDTCLSA
+/programs/web-and-graphic-design/                 @KEITH-GITHUB-USERNAME @DurtschiDTCLSA
+/programs/automotive-advanced-automotive/         @KEITH-GITHUB-USERNAME @DurtschiDTCLSA
+/programs/medical-assistant/                      @KEITH-GITHUB-USERNAME @DurtschiDTCLSA
+/programs/diesel-technology/                      @KEITH-GITHUB-USERNAME @DurtschiDTCLSA
+/programs/medical-coding-and-billing/             @KEITH-GITHUB-USERNAME @DurtschiDTCLSA
+/programs/data-technician-software-development/   @STACIE-GITHUB-USERNAME @DurtschiDTCLSA
+/programs/welding-technology/                     @STACIE-GITHUB-USERNAME @DurtschiDTCLSA
+/programs/cdl-class-a/                            @STACIE-GITHUB-USERNAME @DurtschiDTCLSA
+/programs/practical-nursing/                      @STACIE-GITHUB-USERNAME @DurtschiDTCLSA
+/programs/workplace-success-academic-development/ @STACIE-GITHUB-USERNAME @DurtschiDTCLSA
+/programs/composite-technology/                   @STACIE-GITHUB-USERNAME @DurtschiDTCLSA
+/programs/electrical-apprenticeship/              @DurtschiDTCLSA @WES-GITHUB-USERNAME
+/programs/plumbing-apprenticeship/                @DurtschiDTCLSA @WES-GITHUB-USERNAME
+/programs/hvacr-technician/                       @DurtschiDTCLSA @WES-GITHUB-USERNAME
